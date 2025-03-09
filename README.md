@@ -1,4 +1,4 @@
-# Understanding-DNS
+# Understanding DNS using Active Directory
 
 ## What is DNS?
 
