@@ -4,4 +4,4 @@
 
 DNS Stands for Domain Name System
 
-DNS maps a domain name (example: goole.com) to an IP address which can be used by your computer to find the webserver or resources associated with the domain name
+DNS maps a domain name (example: google.com) to an IP address which can be used by your computer to find the webserver or resources associated with the domain name
