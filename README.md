@@ -25,3 +25,15 @@ CNAME-records:
 4. Delete records from the server
 5. Observe client DNS cache
 6. Create "CNAME" records
+
+![dns-1](https://github.com/user-attachments/assets/ee6dd6fc-cbef-4b92-a19f-4cdeafac2e3e)
+
+
+![dns-2](https://github.com/user-attachments/assets/3560e067-20bf-4cba-9734-0ca454bc3c33)
+
+![dns-3](https://github.com/user-attachments/assets/171551bf-db65-49a4-8b6c-46d18a118836)
+
+
+
+
+
