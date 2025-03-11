@@ -51,6 +51,8 @@ Caching is an effeicent way to save resources and eventually the cache will time
 ![dns-2](https://github.com/user-attachments/assets/3560e067-20bf-4cba-9734-0ca454bc3c33)
 
 On Client-1 we can issue `ipconfig /flushdns`  
+
+
 Using this command will force Client-1 to update its local DNS cache  
 When we do this the updated record with `8.8.8.8` will be updated to Client-1's local DNS cache  
 If we attempt to issue `ping mainframe` it will now ping 8.8.8.8
