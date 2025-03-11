@@ -77,6 +77,24 @@ Password: LabPassword123
 
 ![1](https://github.com/user-attachments/assets/9c63688e-c4d1-4e88-8a89-51f1cc083a79)
 
+Using powershell I attempted to `ping mainframe` however it did not work
 
+When the client tries to resolve a hostname it does the following:
+1. Checks Local Cahce (fastest method)
+2. Checks Local hostfile (2nd fastest)
+3. Checks DNS server
 
+In this case we have not done any configuration yet so the ping fails
 
+![1](https://github.com/user-attachments/assets/1e1638b8-8403-40bd-bf09-e8f549902a66)
+
+To view DNS Cache we can use `ipconfig /displaydns`
+
+Here is the partial output: 
+![image](https://github.com/user-attachments/assets/c3f9f100-068b-48f4-b1e4-cd76a25fc4db)
+
+Next we can try `nslookup mainframe` to query the DNS server for mainframe
+
+Since we haven't done any configuration this fails too
+
+![3](https://github.com/user-attachments/assets/93b47213-2818-419c-b320-07395389bbd6)
