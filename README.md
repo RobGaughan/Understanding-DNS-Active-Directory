@@ -11,7 +11,7 @@ There are over 30 different DNS records for purposes of this lab we will be usin
 
 A-records:
   - Defines the IP address of a host/server
-  - Spefically A-records are used for IPv4 Addresses only
+  - Specifically A-records are used for IPv4 Addresses only
   
 CNAME-records:
 - CNAME stands for Canonical name records
@@ -41,12 +41,12 @@ In our lab we will issue `ping mainframe` on Client-1 when we do that the follow
 
 Then we will update the A-Record of `Mainframe.exampledomain.com` to point to IP address `8.8.8.8` on Domain-Controller-1
 
-Then on Client-1 we will isuue `ping mainframe` this is what happens:
+Then on Client-1 we will issue `ping mainframe` this is what happens:
 1. Client-1 checks Cache (Record Found! 10.0.0.4) - but it is mismatched!
 
 Client-1 will find the 10.0.0.4 record in its cache even though we have updated the A-Record on the DNS server
 
-Caching is an effeicent way to save resources and eventually the cache will time out and update it's record however this will take a while to happen
+Caching is an efficient way to save resources and eventually the cache will time out and update it's record however this will take a while to happen
 
 ![dns-2](https://github.com/user-attachments/assets/3560e067-20bf-4cba-9734-0ca454bc3c33)
 
@@ -58,6 +58,9 @@ When we do this the updated record with `8.8.8.8` will be updated to Client-1's 
 If we attempt to issue `ping mainframe` it will now ping 8.8.8.8
 
 ![dns-3](https://github.com/user-attachments/assets/171551bf-db65-49a4-8b6c-46d18a118836)
+
+
+
 
 
 
