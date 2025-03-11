@@ -26,7 +26,7 @@ CNAME-records:
 5. Observe client DNS cache
 6. Create "CNAME" records
 
-
+### DNS caching explaination 
 
 ![dns-1](https://github.com/user-attachments/assets/38d4d17c-3c7d-4505-b695-1ba02cb24307)
 
