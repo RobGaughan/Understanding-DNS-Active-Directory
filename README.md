@@ -1,5 +1,13 @@
 # Understanding DNS using Active Directory
 
+> [!NOTE]
+> This Lab builds off of the following Labs: 
+>  - [Preparing Infrastructure for Active Directory in Azure](https://github.com/RobGaughan/Infrastructure-For-AD-Azure)
+>  - [Deploying Active Directory in Azure](https://github.com/RobGaughan/Deploying-Active-Directory-in-Azure/)
+>  - [Creating Users, Managing Group Policy, and Accounts](https://github.com/RobGaughan/Creating-Users-Managing-Group-Policy-and-Accounts)
+>
+> In this lab we will continue to build off the Infrastructure configured in the last three labs listed above
+
 ## What is DNS?
 
 DNS Stands for Domain Name System
@@ -60,11 +68,6 @@ If we attempt to issue `ping mainframe` it will now ping 8.8.8.8
 ![dns-3](https://github.com/user-attachments/assets/171551bf-db65-49a4-8b6c-46d18a118836)
 
 ## Configuration Steps
-> [!NOTE]
-> This Lab builds off of the following Labs: 
->  - [Preparing Infrastructure for Active Directory in Azure](https://github.com/RobGaughan/Infrastructure-For-AD-Azure)
->  - [Deploying Active Directory in Azure](https://github.com/RobGaughan/Deploying-Active-Directory-in-Azure/)
->  - [Creating Users, Managing Group Policy, and Accounts](https://github.com/RobGaughan/Creating-Users-Managing-Group-Policy-and-Accounts)
 
 #### Connect to Client-1 using admin jane_admin
 
