@@ -59,7 +59,7 @@ If we attempt to issue `ping mainframe` it will now ping 8.8.8.8
 
 ![dns-3](https://github.com/user-attachments/assets/171551bf-db65-49a4-8b6c-46d18a118836)
 
-
+## Configuration Steps
 
 
 
