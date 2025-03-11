@@ -98,3 +98,39 @@ Next we can try `nslookup mainframe` to query the DNS server for mainframe
 Since we haven't done any configuration this fails too
 
 ![3](https://github.com/user-attachments/assets/93b47213-2818-419c-b320-07395389bbd6)
+
+
+### Create A-Record on Domain-Controller-1
+
+#### Connect to Domain-Controller-1
+Virtual Machines > Domain-Controller-1 > Networking > Network settings 
+
+From here we want to take note of the public IP address we will be using this to remote into Domain-Controller-1
+
+![18](https://github.com/user-attachments/assets/e7e60b6e-0fe5-4f7f-9fb2-396aa86e7c11)
+
+Using Remote Desktop Connection enter the public IP you found in the last step  
+Username: LabADMIN  
+Password: LabPassword123  
+Then click "connect"
+
+![19](https://github.com/user-attachments/assets/05c136e9-4118-496f-a9ca-247459e5c0fb)
+
+#### Create A-Record
+
+Open DNS
+
+![4](https://github.com/user-attachments/assets/868c44b4-0c2d-4d59-87ef-ed42283dfb6c)
+
+
+Navigate to Domain-Controll > Forward Lookup Zones > exampledomain.com
+
+![5](https://github.com/user-attachments/assets/73ccd023-509f-409c-a30a-10e470344d10)
+
+Right Click > Create New Host (A or AAA)
+
+![6](https://github.com/user-attachments/assets/cea7246b-92f1-41f6-8e58-b02eab53158b)
+
+Create a new record of "mainframe" with IP address: 10.0.0.4
+
+![7](https://github.com/user-attachments/assets/d7853007-f19f-4309-8a0f-bc296fd4fa80)
