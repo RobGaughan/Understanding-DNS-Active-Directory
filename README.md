@@ -186,5 +186,16 @@ Now we can see that `mainframe` updated to `8.8.8.8`
 
 ![image](https://github.com/user-attachments/assets/55e85378-9ef7-4975-8ed5-25baf23029d4)
 
+### Create "CNAME" records
+
+Back on Domain-Controller-1 Create a CNAME record that maps `search` to `www.google.com`
+
+![image](https://github.com/user-attachments/assets/3541e585-2236-498e-a516-8bec96915a39)
+
+Now on Client-1 we will issue `ping search`
+
+As you can see it pings www.google.com
+
+![image](https://github.com/user-attachments/assets/00b0ad1e-e90a-431e-a209-a1b775581852)
 
 
