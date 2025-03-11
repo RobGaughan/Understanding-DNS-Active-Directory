@@ -26,7 +26,7 @@ CNAME-records:
 5. Observe client DNS cache
 6. Create "CNAME" records
 
-### DNS caching explaination 
+### DNS caching explanation
 
 First we create an A-Record on Domain-Controller-1 that points `Mainframe.exampledomain.com` to IP address `10.0.0.4`
 
