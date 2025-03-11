@@ -17,7 +17,7 @@ CNAME-records:
 - CNAME stands for Canonical name records
 - Using CNAME-records we can create aliases that point to the canonical (true) domain name
 
-## Steps we will take in this lab
+## Overview of lab
 
 1. Inspect DNS A-Records
 2. Create A-Records on the Server
@@ -26,8 +26,9 @@ CNAME-records:
 5. Observe client DNS cache
 6. Create "CNAME" records
 
-## Overview of lab
-![dns-1](https://github.com/user-attachments/assets/ee6dd6fc-cbef-4b92-a19f-4cdeafac2e3e)
+
+
+![dns-1](https://github.com/user-attachments/assets/38d4d17c-3c7d-4505-b695-1ba02cb24307)
 
 ![dns-2](https://github.com/user-attachments/assets/3560e067-20bf-4cba-9734-0ca454bc3c33)
 
