@@ -61,7 +61,21 @@ If we attempt to issue `ping mainframe` it will now ping 8.8.8.8
 
 ## Configuration Steps
 
+#### Connect to Client-1 using admin jane_admin
 
+Find client-1 public IP address:  
+Virtual Machines > Client-1 > Networking > Network settings 
+
+![image](https://github.com/user-attachments/assets/35965722-d05f-4c90-be6c-a737d71cd161)
+
+
+login using Remote Desktop Connection 
+
+Make sure to login using domain context:  
+Username: EXAMPLEDOMAIN\jane_admin  
+Password: LabPassword123
+
+![1](https://github.com/user-attachments/assets/9c63688e-c4d1-4e88-8a89-51f1cc083a79)
 
 
 
