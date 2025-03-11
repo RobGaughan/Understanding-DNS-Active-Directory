@@ -44,7 +44,7 @@ Then we will update the A-Record of `Mainframe.exampledomain.com` to point to IP
 Then on Client-1 we will isuue `ping mainframe` this is what happens:
 1. Client-1 checks Cache (Record Found! 10.0.0.4) - but it is mismatched!
 
-Client-1 will find the 10.0.0.4 record in its cache even tho we have updated the A-Record on the DNS server
+Client-1 will find the 10.0.0.4 record in its cache even though we have updated the A-Record on the DNS server
 
 Caching is an effeicent way to save resources and eventually the cache will time out and update it's record however this will take a while to happen
 
