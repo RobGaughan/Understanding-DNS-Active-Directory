@@ -22,7 +22,7 @@ CNAME-records:
 1. Inspect DNS A-Records
 2. Create A-Records on the Server
 3. Observe the A-Records we Created
-4. Delete records from the server
+4. Modify the A-record on the server
 5. Observe client DNS cache
 6. Create "CNAME" records
 
@@ -134,3 +134,57 @@ Right Click > Create New Host (A or AAA)
 Create a new record of "mainframe" with IP address: 10.0.0.4
 
 ![7](https://github.com/user-attachments/assets/d7853007-f19f-4309-8a0f-bc296fd4fa80)
+
+### Observe the A-Records we Created
+
+Back on Client-1 issue `ping mainframe`
+
+Now we should see a successful ping 
+![image](https://github.com/user-attachments/assets/9a88e738-f079-4481-a4f1-09231317dd6f)
+
+Next run `nslookup mainframe`
+
+We should see the following output:  
+![image](https://github.com/user-attachments/assets/56abd313-2c57-4f72-a5aa-17a4a6c109a9)
+
+
+### Change A-record on Domain-Controller-1
+
+Now we will modify the record to point to `8.8.8.8` intstead of `10.0.0.4`
+
+![image](https://github.com/user-attachments/assets/f0e54d8a-157e-4727-8bdf-c0d5cddee0f1)
+
+### Observe client DNS cache
+
+Next issue `ping mainframe` again on Client-1 and observe what address is being used
+
+As we can see Client-1 is still using `10.0.0.4` instead of `8.8.8.8` this is becasue Client-1 Local Cache has not updated 
+
+![image](https://github.com/user-attachments/assets/a0f3087f-fa75-429c-9ab0-e2e70d3e7ddd)
+
+Isusse `ipconfig /displaydns` to view the cache
+
+We can see the mainframe entry is still using `10.0.0.4`
+
+![image](https://github.com/user-attachments/assets/fa991c07-8cda-4e0c-9de6-ae1b12897f1b)
+
+Now we will issue `ipconfig /flushdns` to flush or erase the current cached entries 
+
+![image](https://github.com/user-attachments/assets/db19d522-2bb5-41c2-b29e-6f6633c6f5d8)
+
+Next isusse ipconfig /displaydns to view the cache again
+
+We can now observe that many DNS entries were removed including `mainframe`
+
+![image](https://github.com/user-attachments/assets/bfc9deaa-d955-48ba-a55e-3952667956ec)
+
+Now lets ping mainframe again and then oberve the cache to see if anything changes
+
+Now we can see that `mainframe` updated to `8.8.8.8`
+
+![image](https://github.com/user-attachments/assets/f6de78a1-794a-4efe-bc4e-98539790dde0)
+
+![image](https://github.com/user-attachments/assets/55e85378-9ef7-4975-8ed5-25baf23029d4)
+
+
+
